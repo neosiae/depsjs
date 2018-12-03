@@ -1,0 +1,27 @@
+{
+  "name": "depsjs-backend",
+  "version": "1.0.0",
+  "description": "Keep your JavaScript dependencies secure and up-to-date",
+  "scripts": {
+    "dev:api": "fastify start -p 3001 -l info -P -w ./src/services/api",
+    "dev:status": "fastify start -p 3002 -l info -P -w ./src/services/status",
+    "start:api": "fastify start -p 3001 -l info ./src/services/api",
+    "start:status": "fastify start -p 3002 -l info ./src/services/status",
+    "test": "standard"
+  },
+  "author": "Denis Kotlica",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^1.13.0",
+    "fastify-cli": "^0.23.0",
+    "fastify-cors": "^0.2.0",
+    "fastify-helmet": "^2.1.0",
+    "fastify-plugin": "^1.2.1",
+    "gh-badges": "^2.1.0",
+    "node-fetch": "^2.2.0",
+    "semver": "^5.6.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

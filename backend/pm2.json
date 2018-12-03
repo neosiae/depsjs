@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "api",
+      "script": "npm",
+      "args": "run start:api"
+    },
+    {
+      "name": "status",
+      "script": "npm",
+      "args": "run start:status"
+    }
+  ]
+}
